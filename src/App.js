@@ -30,8 +30,9 @@ class App extends React.Component {
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchValue.toLocaleLowerCase()));
     return (
       <div className="App">
-          <SearchBox placeholder='search monsters' handleChange={this.handleSearch} />
+        <SearchBox placeholder='search monsters' handleChange={this.handleSearch} />
         <CardList monsters={filteredMonsters} />
+        <footer>This is the footer</footer>
       </div>
     );  
   }
